@@ -9,6 +9,8 @@
 
 **Research prototype | SAC + temporal CNN–GRU | 3 training seeds | 12 completed RL runs**
 
+**Authors (MSc students): Madiyar Bolatov, Amanbek Faizolla, Alisher Amangeldy. Astana IT University**
+
 </div>
 
 ---
