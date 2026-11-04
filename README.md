@@ -84,18 +84,66 @@ For **Level A SAC M2**, the evaluation additionally measured:
 
 On unseen shapes, a successful physical grasp can therefore go unconfirmed by the vision module. Episode-level CV success is **not** the same quantity as per-frame detector F1.
 
-## Results and demonstrations
 
-Browse the tracked experiment artifacts:
+## Results and Demonstrations
 
-- [Final evaluation and episode-level CSVs](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/final_eval/)
-- [Report tables and figures](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/results/v3_report/)
-- [Saved SAC best checkpoints](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/models/)
-- [CV detector weights and artifacts](visuograsp_full_outputs/cv_v2/detectors/)
+The following demonstrations showcase the behavior of trained SAC agents in MuJoCo, including successful grasps, failure cases, and discrepancies between physical and vision-confirmed contact.
+
+Each video presents wrist and side camera views, lift height, ground-truth (GT) contacts, and D2 vision-confirmed contacts.
+
+### 1. Level A — Successful Grasp
+
+The SAC M2 agent successfully grasps and lifts a box using 16-DoF finger control.
+
+![Level A Successful Grasp](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_train_success.gif)
+
+[Watch full video (MP4)](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_train_success.mp4)
+
+**Outcome:** GT Success = 1, CV Success = 1.
+
+### 2. Level A — Failed Grasp
+
+The agent fails to establish a stable grasp on a capsule-shaped object.
+
+![Level A Failed Grasp](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_train_failure.gif)
+
+[Watch full video (MP4)](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_train_failure.mp4)
+
+**Outcome:** GT Success = 0, CV Success = 0.
+
+### 3. Level B — Finger and Wrist Control
+
+The SAC M2 agent controls 16 finger joints and three wrist-translation axes using a scripted grasp prior with learned residual actions.
+
+![Level B Successful Grasp](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/B_train_success.gif)
+
+[Watch full video (MP4)](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/B_train_success.mp4)
+
+**Outcome:** GT Success = 1, CV Success = 1.
+
+### 4. Generalization — Unseen Object
+
+The trained agent attempts to grasp a mug-like object from Test-2, containing unseen object families.
+
+![Unseen Object Grasp](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_test2_success.gif)
+
+[Watch full video (MP4)](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/A_test2_success.mp4)
+
+**Outcome:** GT Success = 1, CV Success = 0.
+
+The object is successfully grasped according to simulator ground truth, but the temporal D2 detector does not confirm the grasp. This highlights the difference between physical manipulation success and vision-based contact confirmation.
+
+### Additional Experiment Artifacts
+
+- [Independent evaluation results](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/final_eval/)
+- [Learning curves and figures](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/results/v3_report/)
+- [Saved SAC checkpoints](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/models/)
+- [CV detector weights](visuograsp_full_outputs/cv_v2/detectors/)
 - [MuJoCo scenes](visuograsp_full_outputs/scenes/)
-- [Demo video directory](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/)
+- [All demonstration videos](visuograsp_full_outputs/cv_v2/drl_runs_v3_final/videos/v33_final_demos/)
 
-The recorded demos include **successful grasps, failed grasps, and cases where physical success disagrees with the D2 detector**. Demo labels should be interpreted using the replayed GT/CV result rather than only the original episode label.
+> **Note:** These videos illustrate selected episodes. Quantitative performance is reported separately using independent evaluation results across three training seeds.
+
 
 ## Repository guide
 
