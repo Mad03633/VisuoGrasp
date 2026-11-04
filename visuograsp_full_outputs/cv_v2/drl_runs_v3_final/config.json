@@ -1,0 +1,31 @@
+{
+  "cv_version": "dual_rgbd_48_4frame_v2",
+  "policy_hz": 20,
+  "physics_dt": 0.0025,
+  "image_size": 128,
+  "patch_size": 32,
+  "episode_steps": 200,
+  "detector_dataset_episodes": 620,
+  "detector_max_samples": 40000,
+  "detector_epochs": 50,
+  "detector_checkpoint_batches": 50,
+  "detector_batch": 128,
+  "main_steps": 2000000,
+  "full_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "eval_episodes_per_object": 50,
+  "hold_frames": 60,
+  "contact_threshold_n": 0.2,
+  "confirm_k": 3,
+  "release_m": 2,
+  "threshold_high": 0.55,
+  "threshold_low": 0.35,
+  "train_level": "A",
+  "secondary_level": "B",
+  "render_every_step": true
+}

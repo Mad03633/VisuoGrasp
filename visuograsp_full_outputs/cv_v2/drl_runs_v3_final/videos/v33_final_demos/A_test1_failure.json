@@ -1,0 +1,14 @@
+{
+  "label": "A_test1_failure",
+  "policy": "V3_A_SAC_M2",
+  "train_seed": 33,
+  "condition": "test1",
+  "shape": "ring",
+  "episode": 2,
+  "episode_seed": 32050002,
+  "expected_gt": 0,
+  "actual_gt": 0,
+  "actual_cv": 0,
+  "frames_simulated": 126,
+  "file": "A_test1_failure.mp4"
+}

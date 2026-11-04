@@ -1,0 +1,77 @@
+{
+  "digest": "86b030564df83b11",
+  "payload": {
+    "version": "v3final_3_ns10",
+    "physics": [
+      " cone=\"elliptic\" impratio=\"10\" noslip_iterations=\"5\"",
+      ""
+    ],
+    "options": {
+      "residual_scale": 0.15,
+      "filter_alpha": 0.35,
+      "hand_offset": 0.03,
+      "random_yaw": true,
+      "effective_friction": true,
+      "blind": false
+    },
+    "reward": {
+      "lift": 3.0,
+      "approach": 2.0,
+      "contact": 0.01,
+      "opposition": 0.02,
+      "hold_rate": 0.1,
+      "hold_bonus": 10.0,
+      "drop": -3.0,
+      "effort": -0.0005
+    },
+    "gamma": 0.99,
+    "task": {
+      "level": "A",
+      "action_mode": "delta"
+    },
+    "spec": {
+      "tag": "V3_A_SAC_M0",
+      "task": "A_delta",
+      "algo": "SAC",
+      "level": "A",
+      "mode": "M0",
+      "k": 3,
+      "detector": "D0",
+      "reward": "shaped",
+      "synergy": false,
+      "blind": false
+    },
+    "schedule": [
+      25,
+      60,
+      0.0025,
+      0.003,
+      0.17,
+      0.13,
+      0.089
+    ],
+    "sac": {
+      "learning_rate": 0.0003,
+      "buffer_size": 300000,
+      "batch_size": 256,
+      "learning_starts": 5000,
+      "train_freq": 1,
+      "gradient_steps": 1,
+      "ent_coef": "auto_0.1",
+      "n_steps": 10
+    },
+    "td3": {
+      "learning_rate": 0.001,
+      "buffer_size": 300000,
+      "batch_size": 256,
+      "learning_starts": 5000,
+      "train_freq": [
+        1,
+        "step"
+      ],
+      "gradient_steps": 1,
+      "policy_delay": 2
+    },
+    "td3_sigma": 0.1
+  }
+}

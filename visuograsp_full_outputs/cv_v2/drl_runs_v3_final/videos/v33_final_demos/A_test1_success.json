@@ -1,0 +1,14 @@
+{
+  "label": "A_test1_success",
+  "policy": "V3_A_SAC_M2",
+  "train_seed": 22,
+  "condition": "test1",
+  "shape": "box",
+  "episode": 0,
+  "episode_seed": 32010000,
+  "expected_gt": 1,
+  "actual_gt": 1,
+  "actual_cv": 1,
+  "frames_simulated": 200,
+  "file": "A_test1_success.mp4"
+}

@@ -1,0 +1,9 @@
+label,policy,train_seed,condition,shape,episode,episode_seed,expected_gt,actual_gt,actual_cv,frames_simulated,file
+A_train_success,V3_A_SAC_M2,33,nominal,box,10,31010010,1,1,1,182,A_train_success.mp4
+A_train_failure,V3_A_SAC_M2,22,nominal,capsule,11,31040011,0,0,0,159,A_train_failure.mp4
+A_test1_success,V3_A_SAC_M2,22,test1,box,0,32010000,1,1,1,200,A_test1_success.mp4
+A_test1_failure,V3_A_SAC_M2,33,test1,ring,2,32050002,0,0,0,126,A_test1_failure.mp4
+A_test2_success,V3_A_SAC_M2,33,test2,mug,0,33030000,1,1,0,200,A_test2_success.mp4
+A_test2_failure,V3_A_SAC_M2,22,test2,bottle,1,33040001,0,0,0,157,A_test2_failure.mp4
+B_train_success,V3_B_SAC_M2,33,nominal,box,10,31010010,1,1,1,200,B_train_success.mp4
+B_train_failure,V3_B_SAC_M2,33,nominal,ring,18,31050018,0,1,0,200,B_train_failure.mp4

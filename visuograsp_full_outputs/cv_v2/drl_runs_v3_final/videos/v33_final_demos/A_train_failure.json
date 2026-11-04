@@ -1,0 +1,14 @@
+{
+  "label": "A_train_failure",
+  "policy": "V3_A_SAC_M2",
+  "train_seed": 22,
+  "condition": "nominal",
+  "shape": "capsule",
+  "episode": 11,
+  "episode_seed": 31040011,
+  "expected_gt": 0,
+  "actual_gt": 0,
+  "actual_cv": 0,
+  "frames_simulated": 159,
+  "file": "A_train_failure.mp4"
+}

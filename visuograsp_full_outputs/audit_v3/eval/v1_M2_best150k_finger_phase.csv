@@ -1,0 +1,13 @@
+split,finger,phase,tp,fp,fn,tn
+train,0,close,3687,708,1317,1488
+train,0,lift,3952,471,194,3089
+train,0,top,2212,97,256,3458
+train,1,close,4612,206,1058,1324
+train,1,lift,2585,180,1637,3304
+train,1,top,9,0,1267,4747
+train,2,close,3423,233,1581,1963
+train,2,lift,3360,198,556,3592
+train,2,top,392,1420,104,4107
+train,3,close,2519,285,1658,2738
+train,3,lift,3496,139,957,3114
+train,3,top,1400,13,1169,3441

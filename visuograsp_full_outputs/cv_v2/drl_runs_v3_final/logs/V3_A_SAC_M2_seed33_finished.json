@@ -1,0 +1,11 @@
+{
+  "tag": "V3_A_SAC_M2",
+  "seed": 33,
+  "steps": 100000,
+  "selected_model_step": 75000,
+  "selected_model_source": "best_eval",
+  "stop_reason": "max_steps",
+  "best_eval_gt_success": 0.75,
+  "seconds_this_session": 3551.2776691913605,
+  "signature": "cbee51a9301b2473"
+}

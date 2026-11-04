@@ -1,0 +1,8 @@
+{
+  "step": 25000,
+  "gt_success": 0.75,
+  "cv_success": 0.7777777777777778,
+  "mean_return": 20.133912708257338,
+  "episodes": 36,
+  "note": "Selected on fixed-seed evaluation of TRAIN object families only"
+}

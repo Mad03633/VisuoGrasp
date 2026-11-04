@@ -1,0 +1,7 @@
+{
+  "a_script": 0.8166666666666667,
+  "b_zero": 0.6166666666666667,
+  "b_best_servo": 0.9,
+  "best_servo": "base_B_servo_g100",
+  "run_level_b": true
+}

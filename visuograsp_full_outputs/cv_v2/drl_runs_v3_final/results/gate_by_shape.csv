@@ -1,0 +1,7 @@
+shape,base_A_script,base_A_zero,base_B_servo_g100,base_B_servo_g125,base_B_servo_g150,base_B_zero
+box,1.0,0.0,1.0,1.0,1.0,0.9
+capsule,0.9,0.0,1.0,1.0,1.0,0.5
+cylinder,1.0,0.0,1.0,1.0,1.0,0.9
+ellipsoid,0.8,0.0,1.0,1.0,1.0,0.8
+ring,0.2,0.0,0.4,0.4,0.4,0.0
+sphere,1.0,0.0,1.0,1.0,1.0,0.6

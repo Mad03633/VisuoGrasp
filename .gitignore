@@ -1,0 +1,30 @@
+﻿# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+.env
+
+# Archived notebooks
+_archive/
+
+# Large CV datasets
+visuograsp_full_outputs/data/
+visuograsp_full_outputs/cv_v2/data/
+
+# Old experiments and backups
+visuograsp_full_outputs/cv_v2/drl_runs/
+visuograsp_full_outputs/cv_v2/drl_runs_v3_final_BACKUP/
+
+# Large intermediate files
+*.npy
+*.npz
+*.pkl
+
+# Temporary SAC checkpoints
+*_resume*
+*_last.zip
+
+# Keep only the selected best SAC checkpoints
+visuograsp_full_outputs/**/models/*.zip
+!visuograsp_full_outputs/cv_v2/drl_runs_v3_final/models/*_best.zip

@@ -1,0 +1,14 @@
+{
+  "label": "B_train_failure",
+  "policy": "V3_B_SAC_M2",
+  "train_seed": 33,
+  "condition": "nominal",
+  "shape": "ring",
+  "episode": 18,
+  "episode_seed": 31050018,
+  "expected_gt": 0,
+  "actual_gt": 1,
+  "actual_cv": 0,
+  "frames_simulated": 200,
+  "file": "B_train_failure.mp4"
+}

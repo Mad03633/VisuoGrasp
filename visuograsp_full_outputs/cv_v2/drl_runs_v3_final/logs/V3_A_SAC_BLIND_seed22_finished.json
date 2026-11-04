@@ -1,0 +1,11 @@
+{
+  "tag": "V3_A_SAC_BLIND",
+  "seed": 22,
+  "steps": 100000,
+  "selected_model_step": 25000,
+  "selected_model_source": "best_eval",
+  "stop_reason": "max_steps",
+  "best_eval_gt_success": 0.75,
+  "seconds_this_session": 4043.1704530715942,
+  "signature": "d1ffd0b2a5404058"
+}
