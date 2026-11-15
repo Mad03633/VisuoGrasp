@@ -1,0 +1,43 @@
+{
+ "scripted": "SCRIPTED",
+ "zero_residual": "ZERO",
+ "perturbed_1e-3": "PERTURBED",
+ "wave3_best": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\check_conservative_2gates_s11\\best_model.zip",
+ "wave3_last": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\check_conservative_2gates_s11\\last_model.zip",
+ "wave3_best_meta": {
+  "step": 3000,
+  "selection_key": [
+   0.7,
+   0.7,
+   0.7,
+   12.3906
+  ],
+  "key_order": [
+   "gt_success",
+   "gt_any_phalanx",
+   "partial_lift_rate",
+   "mean_max_lift_cm"
+  ],
+  "validation_episodes": 10,
+  "seed_base": 8000000
+ },
+ "wave3_last_meta": {
+  "steps": 3500,
+  "requested_steps": 3500,
+  "seconds_wall": 106.48921990394592,
+  "seconds_training_excl_waits": 86.50639319419861,
+  "seconds_waiting_gate_or_pause": 20.001599550247192,
+  "steps_per_s_training": 40.4594363947911,
+  "stop_reason": "completed",
+  "error": null,
+  "best_validation_gt": 0.7,
+  "best_step": 3000,
+  "best_key": [
+   0.7,
+   0.7,
+   0.7,
+   12.3906
+  ],
+  "finished": "2026-11-14T14:35:39"
+ }
+}

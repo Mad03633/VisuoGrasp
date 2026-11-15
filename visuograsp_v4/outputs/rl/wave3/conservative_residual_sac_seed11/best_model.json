@@ -1,0 +1,17 @@
+{
+ "step": 25000,
+ "selection_key": [
+  0.6,
+  0.6,
+  0.62,
+  10.8104
+ ],
+ "key_order": [
+  "gt_success",
+  "gt_any_phalanx",
+  "partial_lift_rate",
+  "mean_max_lift_cm"
+ ],
+ "validation_episodes": 50,
+ "seed_base": 8000000
+}

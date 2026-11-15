@@ -1,0 +1,8 @@
+{
+ "step": 2000,
+ "reason": "gate_stop",
+ "decision": {
+  "decision": "stop",
+  "reason": "smoke test"
+ }
+}

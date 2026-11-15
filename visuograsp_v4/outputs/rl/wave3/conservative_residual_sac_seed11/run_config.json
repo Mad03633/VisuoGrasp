@@ -1,0 +1,277 @@
+{
+ "started": "2026-11-14T14:36:02",
+ "mode": "conservative_residual_sac (Wave 3)",
+ "seed": 11,
+ "total_steps": 75000,
+ "gates": [
+  25000,
+  50000
+ ],
+ "approaches": [
+  "top",
+  "oblique"
+ ],
+ "pipeline_check": false,
+ "val_per_cell": 5,
+ "privileged": "nominal scripted controller planned from the simulator object pose; actor observation contains the simulator object pose; contacts = GT oracle. Not autonomous, not vision-based.",
+ "residual_config": {
+  "version": "res2",
+  "finger_max": 0.08,
+  "pos_max": 0.004,
+  "rot_max": 0.03,
+  "reward_version": "v4r2",
+  "w_residual": 0.01
+ },
+ "reward": "v4r2 = v4r1 - 0.01 * mean(r^2)",
+ "exploration": {
+  "warmup": "policy samples (zero mean) for learning_starts steps, no uniform actions",
+  "init_std_pre_tanh": 0.2,
+  "ent_coef_init": 0.01,
+  "target_entropy": -5.03,
+  "initial_stochastic_abs_residual_mean": 0.15602260828018188
+ },
+ "initial_deterministic_residual_exactly_zero": true,
+ "verification_report": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\verification\\verification_report.json",
+ "v4_config": {
+  "physics": {
+   "timestep": 0.0025,
+   "integrator": "implicitfast",
+   "iterations": 65,
+   "cone": "elliptic",
+   "impratio": 10.0,
+   "noslip_iterations": 5,
+   "gravity": -9.81,
+   "contact_solref": [
+    0.006,
+    1.0
+   ]
+  },
+  "hand": {
+   "finger_links": [
+    0.03,
+    0.027,
+    0.022,
+    0.018
+   ],
+   "link_radius": 0.0065,
+   "pad_radius": 0.009,
+   "finger_base_radius": 0.06,
+   "finger_angles": [
+    3.141592653589793,
+    1.0471975511965976,
+    -1.0471975511965976,
+    0.0
+   ],
+   "palm_half": [
+    0.055,
+    0.055,
+    0.012
+   ],
+   "palm_mass": 0.2,
+   "link_masses": [
+    0.012,
+    0.012,
+    0.012,
+    0.009
+   ],
+   "joint_range": [
+    1.45,
+    1.3,
+    1.3,
+    1.3
+   ],
+   "joint_damping": 0.025,
+   "joint_armature": 0.001,
+   "kp": [
+    2.5,
+    1.8,
+    1.8,
+    1.8
+   ],
+   "force_limit": 3.0,
+   "finger_friction": [
+    2.0,
+    0.02,
+    0.002
+   ],
+   "gravcomp": true,
+   "weld_solref": [
+    0.01,
+    1.0
+   ],
+   "weld_solimp": [
+    0.95,
+    0.99,
+    0.001
+   ],
+   "grasp_center_offset": 0.075,
+   "wrist_camera_fovy": 95.0
+  },
+  "control": {
+   "policy_hz": 20,
+   "finger_delta_max": 0.055,
+   "wrist_trans_max": 0.01,
+   "wrist_rot_max": 0.06,
+   "workspace_lo": [
+    -0.3,
+    -0.3,
+    0.03
+   ],
+   "workspace_hi": [
+    0.3,
+    0.3,
+    0.45
+   ],
+   "max_tilt_deg": 110.0,
+   "table_clearance": 0.004,
+   "max_lead_pos": 0.025,
+   "max_lead_rot": 0.3,
+   "interpolate_substeps": true
+  },
+  "objects": {
+   "families": [
+    "box",
+    "cylinder",
+    "bottle",
+    "ring",
+    "l_shape"
+   ],
+   "scale_bins": [
+    0.85,
+    0.95,
+    1.05,
+    1.15
+   ],
+   "nominal_mass": 0.15,
+   "mass_range": [
+    0.05,
+    0.3
+   ],
+   "friction_range": [
+    0.5,
+    1.2
+   ],
+   "xy_range": 0.02,
+   "settle_seconds": 0.5,
+   "max_settle_attempts": 6,
+   "rest_lin_speed": 0.02,
+   "rest_ang_speed": 0.3,
+   "max_penetration": 0.002,
+   "max_xy_after_settle": 0.08
+  },
+  "task": {
+   "max_steps": 320,
+   "hold_frames": 60,
+   "lift_success": 0.1,
+   "lift_drop_arm": 0.035,
+   "drop_height": 0.03,
+   "contact_threshold_n": 0.2,
+   "hand_start_height": [
+    0.26,
+    0.32
+   ],
+   "hand_start_xy_radius": 0.08,
+   "hand_start_max_tilt_deg": 25.0,
+   "image_size": 128
+  },
+  "reward": {
+   "version": "v4r1",
+   "terminate_on_success": false,
+   "gamma": 0.99,
+   "w_reach": 2.0,
+   "reach_scale": 0.35,
+   "lateral_gain": 1.5,
+   "corridor_len": 0.1,
+   "w_align": 1.0,
+   "w_contact": 1.0,
+   "w_lift": 3.0,
+   "w_push": 1.0,
+   "push_scale": 0.05,
+   "hold_rate": 0.1,
+   "success_bonus": 10.0,
+   "drop": -3.0,
+   "table_collision": -0.02,
+   "effort": -0.0005,
+   "smoothness": -0.0005,
+   "physics_failure": -5.0
+  },
+  "version": "v4.0-foundation"
+ },
+ "sac_config": {
+  "learning_rate": 0.0003,
+  "buffer_size": 1000000,
+  "batch_size": 256,
+  "learning_starts": 5000,
+  "train_freq": 1,
+  "gradient_steps": 1,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "ent_coef": "auto_0.01",
+  "n_steps": 10,
+  "net_arch": [
+   256,
+   256
+  ],
+  "layernorm_critic": true,
+  "device": "cpu",
+  "torch_threads": 4,
+  "eval_every": 12500,
+  "checkpoint_every": 12500,
+  "q_health_every": 5000
+ },
+ "obs_dim": 163,
+ "code_sha256_16": {
+  "__init__.py": "e3b0c44298fc1c14",
+  "agents.py": "aa2206895f58447d",
+  "config.py": "cdcfbe8e7e2c39ef",
+  "controller.py": "535974e801a06693",
+  "env.py": "8b8932a2b42eed79",
+  "evaluation.py": "b6b02d84854d1eb9",
+  "grasp_planner.py": "e19b3f2054fdfd3e",
+  "objects.py": "2f8d95674e2ff870",
+  "perception.py": "ed622cce0fd6b742",
+  "residual.py": "b1515e58781ec749",
+  "rotations.py": "e4f4829bb7248565",
+  "scene.py": "17a4299521841988",
+  "scripted.py": "e486e52b8395e878",
+  "sim.py": "6453670011265178",
+  "video.py": "d236651a566674ba",
+  "scripts/__init__.py": "e3b0c44298fc1c14",
+  "scripts/benchmark_throughput.py": "764af830f0f50733",
+  "scripts/evaluate_policy.py": "c9f7aac7024d7e3b",
+  "scripts/integrity_manifest.py": "18ff7c0ada68c8f3",
+  "scripts/monitor_system.py": "cb6edfd33ddb5fd5",
+  "scripts/paired_compare.py": "f28ab1717055ad12",
+  "scripts/record_demos.py": "c655f0f82d7ca564",
+  "scripts/record_policy_videos.py": "56b91399cd526795",
+  "scripts/record_wave2_videos.py": "97aae3e9ed34c04d",
+  "scripts/reward_audit.py": "a32373f344c09c29",
+  "scripts/run_scripted_baseline.py": "7637f6de410d079e",
+  "scripts/run_smoke_tests.py": "795d97199d02aeb6",
+  "scripts/train_conservative_residual_sac.py": "d0b78d67e12f3aaa",
+  "scripts/train_residual_sac.py": "cacfc5318948f95b",
+  "scripts/train_sac.py": "4ee39c51d4071315",
+  "scripts/validate_checkpoints.py": "9e123ba0180a69d5",
+  "scripts/verify_residual.py": "db603d1e442b571e",
+  "scripts/wave1_gate_decision.py": "b1c7fc2837e8ca27",
+  "scripts/wave1_report.py": "d8b4bd0fdeb07433",
+  "scripts/wave2_final_test.py": "6fd2c52eb5d70d0e",
+  "scripts/wave2_gate_decision.py": "3888a466cee8580d",
+  "scripts/wave2_report.py": "b46cf4eda90d4c2a",
+  "scripts/wave3_gate_decision.py": "c95d744ce9a7b496"
+ },
+ "versions": {
+  "python": "3.13.2",
+  "mujoco": "3.17.0",
+  "sb3": "2.9.2",
+  "torch": "2.7.1+cu118"
+ },
+ "seeds": {
+  "sb3_seed": 11,
+  "model_selection": 8000000,
+  "gate_validation": 8500000,
+  "final_evaluation_unseen": 6100000,
+  "exposed_test_not_used": 5100000
+ },
+ "pid": 18444
+}

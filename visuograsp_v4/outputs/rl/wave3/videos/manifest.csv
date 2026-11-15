@@ -1,0 +1,6 @@
+file,kind,seed,approach,family,residual_outcome,residual_outcome_csv,scripted_outcome,scripted_outcome_csv,reproduced,frames,layout
+top_success_top_box_seed6100000.mp4,top_success,6100000,top,box,success_retained,success_retained,success_retained,success_retained,True,160,single
+oblique_success_oblique_bottle_seed6117102.mp4,oblique_success,6117102,oblique,bottle,success_retained,success_retained,lifted_then_dropped,lifted_then_dropped,True,160,single
+informative_failure_top_box_seed6104001.mp4,informative_failure,6104001,top,box,held_without_pad_pair,held_without_pad_pair,success_retained,success_retained,True,160,single
+side_by_side_residual_wins_oblique_bottle_seed6117102.mp4,side_by_side_residual_wins,6117102,oblique,bottle,success_retained,success_retained,lifted_then_dropped,lifted_then_dropped,True,160,"top row scripted, bottom row residual"
+side_by_side_scripted_wins_top_box_seed6104001.mp4,side_by_side_scripted_wins,6104001,top,box,held_without_pad_pair,held_without_pad_pair,success_retained,success_retained,True,160,"top row scripted, bottom row residual"

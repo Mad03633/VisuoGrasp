@@ -1,0 +1,25 @@
+{
+ "written": "2026-11-14T14:31, before any Wave 3 training step",
+ "approved_by_user": "2026-11-14 message 'VisuoGrasp V4 - Wave 3: Final Conservative Residual SAC Experiment'",
+ "setting": "PRIVILEGED residual learning on a scripted controller: nominal controller planned from simulator object pose; actor observation contains simulator object pose; contacts = GT oracle. NOT autonomous, NOT vision-based.",
+ "residual": "res2: set-point offsets, fingers +-0.08 rad, wrist position +-0.004 m (world axes), wrist orientation +-0.03 rad (hand axes, quaternion product). res1 (Wave 2) unchanged.",
+ "reward": "v4r2 = v4r1 (unchanged, computed by VisuoGraspV4Env) - 0.01 * mean_i(r_i^2); v4r1 unchanged",
+ "exploration": "warm-up 5,000 steps sampled from the policy itself (mean exactly 0, std 0.2 pre-tanh, state independent) instead of uniform random actions; ent_coef auto, initial 0.01; target entropy -5.0 (entropy of tanh(N(0,0.2^2)) in 22-D)",
+ "unchanged": "SB3 2.9.2 SAC, LayerNorm critics, n-step 10, lr 3e-4, batch 256, gamma 0.99, tau 0.005, buffer 1M, UTD 1, actor mean layer zero-initialised, seed 11, approaches top + oblique, 4 torch threads",
+ "budget": "25,000 steps; gate -> 50,000; gate -> at most 75,000",
+ "seeds": {
+  "model_selection": "8_000_000+, 50 episodes every 12.5k -> best_model.zip (key: GT success, then any-phalanx, partial lift, mean lift)",
+  "gates": "independent validation 8_500_000+, 200 paired episodes (100 top, 100 oblique): gate checkpoint, best_model, zero residual, chaos control r ~ U(-1e-3, 1e-3)",
+  "final_evaluation": "NEW unseen set 6_100_000 + cell*1000 + approach*100 + ep (ep < 10), 27 cells x 2 approaches x 10 = 540 episodes per policy, run once after checkpoint selection is frozen",
+  "not_used": "5_100_000+ (exposed in Wave 2) is not used for any Wave 3 decision"
+ },
+ "gate_rule": {
+  "stop_always": "numerical instability (non-finite Q/loss or |Q| > 200 twice)",
+  "clearly_underperforms (stop)": "gate checkpoint paired diff vs zero <= -5 pp, or diff < 0 with exact McNemar p < 0.05",
+  "25k_continue": "diff >= 0 AND episodes fixed by the residual (only residual succeeds) >= 3 AND > the number fixed by the chaos control",
+  "25k_otherwise": "stop (comparable but no evidence of useful corrections beyond chaos)",
+  "50k_continue_to_75k": "diff > 0 AND fixed >= 3 AND fixed > chaos control AND diff(50k) >= diff(25k); otherwise stop at 50k"
+ },
+ "final_selection_frozen_before_final_evaluation": "best_model.zip (in-training selection) and last_model.zip",
+ "if_wave3_fails": "stop RL training; no Wave 4"
+}

@@ -1,0 +1,5 @@
+policy,category,outcome_policy,outcome_zero,episodes
+perturbed_1e-3,broken,lifted_then_dropped,success_retained,1
+wave3_best,broken,object_pushed_before_close,success_retained,1
+wave3_last,broken,held_without_pad_pair,success_retained,1
+wave3_last,broken,never_lifted,success_retained,2
