@@ -1,0 +1,11 @@
+{
+ "samples": 2000,
+ "buffer_size_used": 2999,
+ "n_steps": 10,
+ "gamma": 0.99,
+ "max_abs_return_diff": 1.021126062594746e-07,
+ "max_abs_discount_diff": 1.0843524345105493e-07,
+ "max_abs_next_obs_diff": 0.0,
+ "done_mismatches": 0,
+ "passed": true
+}

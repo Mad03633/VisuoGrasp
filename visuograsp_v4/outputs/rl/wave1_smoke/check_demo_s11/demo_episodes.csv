@@ -1,0 +1,9 @@
+seed,approach,start,end,length,return,gt_success,terminated,truncated,outcome
+3110000,top,0,320,320,19.405584999642453,True,False,True,success_retained
+3110001,oblique,320,640,320,-6.629690745746111,False,False,True,never_lifted
+3110002,top,640,960,320,18.6796676661447,True,False,True,success_retained
+3110003,oblique,960,1280,320,19.393363621839093,True,False,True,success_retained
+3110004,top,1280,1315,35,-5.74337538093501,False,True,False,lifted_then_dropped
+3110005,oblique,1315,1635,320,-5.39153689265262,False,False,True,never_lifted
+3110006,top,1635,1955,320,19.215534947689857,True,False,True,success_retained
+3110007,oblique,1955,2275,320,18.23527129712544,True,False,True,success_retained

@@ -1,0 +1,5 @@
+time,step,event,detail
+2026-11-14T11:41:29,2500,gate_waiting,"{""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave1_smoke\\check_demo_s11\\checkpoints\\gate_step_2500.zip""}"
+2026-11-14T11:42:19,2500,gate_decision,"{""waited_s"": 50.0, ""decision"": ""continue"", ""reason"": ""smoke test""}"
+2026-11-14T11:42:19,2500,pause,"{""request"": ""{\""reason\"": \""smoke test of pause path\""}\n"", ""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave1_smoke\\check_demo_s11\\checkpoints\\pause_step_2500.zip""}"
+2026-11-14T11:42:49,2500,resume,"{""paused_s"": 30.0}"

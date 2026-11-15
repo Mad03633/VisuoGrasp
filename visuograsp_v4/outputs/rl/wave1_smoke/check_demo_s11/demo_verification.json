@@ -1,0 +1,49 @@
+{
+ "reward_version_demo_env": "v4r1",
+ "reward_version_train_env": "v4r1",
+ "env_config_equal": true,
+ "obs_mode_equal": true,
+ "contact_source_equal": true,
+ "approaches_equal": true,
+ "action_space_equal": true,
+ "action_space_low_high": [
+  -1.0,
+  1.0
+ ],
+ "sac_scale_action_identity": true,
+ "demo_action_min": -0.9990000128746033,
+ "demo_action_max": 0.9858985543251038,
+ "buffer_gamma": 0.99,
+ "reward_gamma": 0.99,
+ "buffer_n_steps": 10,
+ "reward_terms_keys": [
+  "drop",
+  "effort",
+  "hold_rate",
+  "physics_failure",
+  "shaping",
+  "smoothness",
+  "success_bonus",
+  "table_collision"
+ ],
+ "replayed_episodes": 8,
+ "replayed_transitions": 2275,
+ "max_abs_obs_diff": 0.0,
+ "max_abs_next_obs_diff": 0.0,
+ "max_abs_reward_diff": 0.0,
+ "done_mismatches": 0,
+ "timeout_mismatches": 0,
+ "passed": true,
+ "nstep": {
+  "samples": 2000,
+  "buffer_size_used": 2275,
+  "n_steps": 10,
+  "gamma": 0.99,
+  "max_abs_return_diff": 1.3898567043924004e-06,
+  "max_abs_discount_diff": 1.0843524345105493e-07,
+  "max_abs_next_obs_diff": 0.0,
+  "done_mismatches": 0,
+  "passed": true
+ },
+ "seconds": 7.496129751205444
+}

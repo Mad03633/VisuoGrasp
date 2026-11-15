@@ -1,0 +1,8 @@
+step,return,length,gt_success,signal_success,approach,gt_any,max_lift_cm,final_lift_cm,dropped,object_off_table,sim_failure,contact_occurred,thumb_contact,max_pads,hold_frames_gt,pushed_before_close,outcome
+320,-8.891309,320,0,0,oblique,False,1.367482516112517e-11,-2.2666243881808157e-11,False,False,False,False,False,0,0,False,no_contact
+640,-7.982609,320,0,0,oblique,False,1.3552353683721208e-11,-2.167710455580618e-11,False,False,False,False,False,0,0,False,no_contact
+960,-7.866125,320,0,0,oblique,False,2.592197290152143e-11,1.3490597527976433e-11,False,False,False,False,False,0,0,False,no_contact
+1280,-9.013373,320,0,0,top,False,7.477699015545625e-12,-2.376709939966304e-11,False,False,False,False,False,0,0,False,no_contact
+1600,-7.150987,320,0,0,top,False,0.0,-1.1128251098391218e-11,False,False,False,False,False,0,0,False,no_contact
+1920,-8.306869,320,0,0,top,False,1.3382003838380285e-11,-1.8203494267510223e-11,False,False,False,False,False,0,0,False,no_contact
+2240,-9.279852,320,0,0,top,False,0.41195557978812997,0.004181098751417089,False,False,False,True,True,2,0,False,never_lifted
