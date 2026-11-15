@@ -1,0 +1,13 @@
+System monitor history (Wave 1)
+11:46:49  monitor started detached (Start-Process): performance counters returned nothing in that context and
+          the CSV appended rows with a varying column set (misaligned). File kept as
+          system_monitor_BROKEN_misaligned_columns.csv; not used.
+11:48:46  monitor restarted (PowerShell background task) with a fixed CSV header -> wave1/system_monitor.csv.
+          Thresholds: pause at thermal-zone temp >= 368.15 K (95 C) or passive limit <= 70 % for 5 samples.
+11:51     first readings under load: thermal zone 368 K (~95 C) at ~50-60 % CPU utility, passive limit 100 %,
+          throttle reasons 0, processor performance ~127 % of nominal (turbo) -> the CPU is NOT throttling.
+          A 95 C pause threshold would trigger on normal operating temperature of this laptop; the user's
+          criterion is serious thermal throttling. Monitor restarted with: pause at passive limit <= 70 %
+          (CPU thermally throttled to <= 70 %) or thermal zone >= 372.15 K (99 C), each for 5 consecutive
+          1-min samples, or free memory < 1 GB; resume at <= 363.15 K (90 C) with passive limit 100 % for 3 samples;
+          stop if paused > 30 min. Same CSV continues.

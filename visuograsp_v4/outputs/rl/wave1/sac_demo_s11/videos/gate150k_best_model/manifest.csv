@@ -1,0 +1,7 @@
+file,kind,approach,seed,family,variant,resting_mode,outcome_csv,outcome_rerun,gt_success_rerun,max_lift_cm_rerun,reproduced,frames,torch_threads
+oblique_success_success_retained_seed8501102.mp4,success,oblique,8501102,cylinder,std,upright,success_retained,success_retained,True,41.93013392439777,True,160,1
+oblique_failure_object_pushed_before_close_seed8500100.mp4,failure,oblique,8500100,box,tall,upright,object_pushed_before_close,object_pushed_before_close,False,0.8766780523907031,True,160,1
+oblique_failure_never_lifted_seed8500101.mp4,failure,oblique,8500101,box,flat,upright,never_lifted,never_lifted,False,0.03369603323983561,True,160,1
+top_success_success_retained_seed8500000.mp4,success,top,8500000,box,flat,end,success_retained,success_retained,True,40.53536494291647,True,160,1
+top_failure_object_pushed_before_close_seed8500001.mp4,failure,top,8500001,box,tall,side,object_pushed_before_close,object_pushed_before_close,False,13.582629346372036,True,160,1
+top_failure_lifted_then_dropped_seed8500002.mp4,failure,top,8500002,box,cube,upright,lifted_then_dropped,lifted_then_dropped,False,12.183725600320827,True,137,1

@@ -1,0 +1,116 @@
+{
+ "step": 150000,
+ "reason": "gate_stop",
+ "decision": {
+  "decision": "stop",
+  "reason": "below 20% and no learning trend on the independent set",
+  "rule": "wave1_plan_and_decision_rule.json",
+  "evaluation": {
+   "tag": "gate150k",
+   "numbers": {
+    "checkpoints/step_50000": {
+     "all": {
+      "gt": 0.05,
+      "lo": 0.0215433614563135,
+      "hi": 0.1117519652720881,
+      "partial": 0.11,
+      "n": 100
+     },
+     "top": {
+      "gt": 0.08,
+      "lo": 0.0315490032557906,
+      "hi": 0.188385025450637,
+      "partial": 0.14,
+      "n": 50
+     },
+     "oblique": {
+      "gt": 0.02,
+      "lo": 0.0035391680889764,
+      "hi": 0.1049568647183695,
+      "partial": 0.08,
+      "n": 50
+     }
+    },
+    "checkpoints/step_100000": {
+     "all": {
+      "gt": 0.08,
+      "lo": 0.0410929694858109,
+      "hi": 0.1499826687940307,
+      "partial": 0.29,
+      "n": 100
+     },
+     "top": {
+      "gt": 0.1,
+      "lo": 0.0434751239915711,
+      "hi": 0.2136049033478839,
+      "partial": 0.42,
+      "n": 50
+     },
+     "oblique": {
+      "gt": 0.06,
+      "lo": 0.0206145963646304,
+      "hi": 0.16217343370877,
+      "partial": 0.16,
+      "n": 50
+     }
+    },
+    "checkpoints/step_150000": {
+     "all": {
+      "gt": 0.05,
+      "lo": 0.0215433614563135,
+      "hi": 0.1117519652720881,
+      "partial": 0.22,
+      "n": 100
+     },
+     "top": {
+      "gt": 0.06,
+      "lo": 0.0206145963646304,
+      "hi": 0.16217343370877,
+      "partial": 0.2,
+      "n": 50
+     },
+     "oblique": {
+      "gt": 0.04,
+      "lo": 0.0110386526608265,
+      "hi": 0.1346033787795466,
+      "partial": 0.24,
+      "n": 50
+     }
+    },
+    "best_model": {
+     "all": {
+      "gt": 0.08,
+      "lo": 0.0410929694858109,
+      "hi": 0.1499826687940307,
+      "partial": 0.29,
+      "n": 100
+     },
+     "top": {
+      "gt": 0.1,
+      "lo": 0.0434751239915711,
+      "hi": 0.2136049033478839,
+      "partial": 0.42,
+      "n": 50
+     },
+     "oblique": {
+      "gt": 0.06,
+      "lo": 0.0206145963646304,
+      "hi": 0.16217343370877,
+      "partial": 0.16,
+      "n": 50
+     }
+    }
+   },
+   "threshold_max_gt_150k_or_best": {
+    "checkpoints/step_150000": 0.06,
+    "best_model": 0.1
+   },
+   "threshold_met": false,
+   "trend_gt": false,
+   "trend_partial": false,
+   "numerics_bad": false,
+   "decision": "stop",
+   "basis": "below 20% and no learning trend on the independent set"
+  }
+ }
+}

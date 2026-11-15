@@ -1,0 +1,16 @@
+C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\keras\src\export\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+WARNING: Nan, Inf or huge value in QPOS at DOF 23. The simulation is unstable. Time = 15.3375.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 1.7925.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 8.8425.
+
+WARNING: Inertia matrix is too close to singular, or the effective-metric solve failed to converge, at DOF 25. Check model. Time = 4.8675.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 4.8675.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 4.5200.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 6.6875.
+

@@ -1,0 +1,5 @@
+file,kind,approach,seed,family,variant,resting_mode,outcome_csv,outcome_rerun,gt_success_rerun,max_lift_cm_rerun,reproduced,frames
+oblique_failure_object_pushed_before_close_seed8500101.mp4,failure,oblique,8500101,box,flat,upright,object_pushed_before_close,object_pushed_before_close,False,1.9399729234626846,False,160
+oblique_failure_no_contact_seed8500100.mp4,failure,oblique,8500100,box,tall,upright,no_contact,no_contact,False,0.2279541187388781,False,160
+top_failure_object_pushed_before_close_seed8500000.mp4,failure,top,8500000,box,flat,end,object_pushed_before_close,object_pushed_before_close,False,0.7679537015520315,False,160
+top_failure_no_contact_seed8500002.mp4,failure,top,8500002,box,cube,upright,no_contact,no_contact,False,1.7823589826271302e-11,True,160

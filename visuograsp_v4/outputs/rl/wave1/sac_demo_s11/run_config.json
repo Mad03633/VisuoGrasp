@@ -1,0 +1,248 @@
+{
+ "started": "2026-11-14T11:46:56",
+ "arm": "demo",
+ "seed": 11,
+ "total_steps": 300000,
+ "gate_at": 150000,
+ "approaches": [
+  "top",
+  "oblique"
+ ],
+ "pipeline_check": false,
+ "val_per_cell": 5,
+ "privileged": "observation uses simulator object pose; contact = GT oracle (M0-style); replay prefilled with scripted (privileged) demonstrations",
+ "v4_config": {
+  "physics": {
+   "timestep": 0.0025,
+   "integrator": "implicitfast",
+   "iterations": 65,
+   "cone": "elliptic",
+   "impratio": 10.0,
+   "noslip_iterations": 5,
+   "gravity": -9.81,
+   "contact_solref": [
+    0.006,
+    1.0
+   ]
+  },
+  "hand": {
+   "finger_links": [
+    0.03,
+    0.027,
+    0.022,
+    0.018
+   ],
+   "link_radius": 0.0065,
+   "pad_radius": 0.009,
+   "finger_base_radius": 0.06,
+   "finger_angles": [
+    3.141592653589793,
+    1.0471975511965976,
+    -1.0471975511965976,
+    0.0
+   ],
+   "palm_half": [
+    0.055,
+    0.055,
+    0.012
+   ],
+   "palm_mass": 0.2,
+   "link_masses": [
+    0.012,
+    0.012,
+    0.012,
+    0.009
+   ],
+   "joint_range": [
+    1.45,
+    1.3,
+    1.3,
+    1.3
+   ],
+   "joint_damping": 0.025,
+   "joint_armature": 0.001,
+   "kp": [
+    2.5,
+    1.8,
+    1.8,
+    1.8
+   ],
+   "force_limit": 3.0,
+   "finger_friction": [
+    2.0,
+    0.02,
+    0.002
+   ],
+   "gravcomp": true,
+   "weld_solref": [
+    0.01,
+    1.0
+   ],
+   "weld_solimp": [
+    0.95,
+    0.99,
+    0.001
+   ],
+   "grasp_center_offset": 0.075,
+   "wrist_camera_fovy": 95.0
+  },
+  "control": {
+   "policy_hz": 20,
+   "finger_delta_max": 0.055,
+   "wrist_trans_max": 0.01,
+   "wrist_rot_max": 0.06,
+   "workspace_lo": [
+    -0.3,
+    -0.3,
+    0.03
+   ],
+   "workspace_hi": [
+    0.3,
+    0.3,
+    0.45
+   ],
+   "max_tilt_deg": 110.0,
+   "table_clearance": 0.004,
+   "max_lead_pos": 0.025,
+   "max_lead_rot": 0.3,
+   "interpolate_substeps": true
+  },
+  "objects": {
+   "families": [
+    "box",
+    "cylinder",
+    "bottle",
+    "ring",
+    "l_shape"
+   ],
+   "scale_bins": [
+    0.85,
+    0.95,
+    1.05,
+    1.15
+   ],
+   "nominal_mass": 0.15,
+   "mass_range": [
+    0.05,
+    0.3
+   ],
+   "friction_range": [
+    0.5,
+    1.2
+   ],
+   "xy_range": 0.02,
+   "settle_seconds": 0.5,
+   "max_settle_attempts": 6,
+   "rest_lin_speed": 0.02,
+   "rest_ang_speed": 0.3,
+   "max_penetration": 0.002,
+   "max_xy_after_settle": 0.08
+  },
+  "task": {
+   "max_steps": 320,
+   "hold_frames": 60,
+   "lift_success": 0.1,
+   "lift_drop_arm": 0.035,
+   "drop_height": 0.03,
+   "contact_threshold_n": 0.2,
+   "hand_start_height": [
+    0.26,
+    0.32
+   ],
+   "hand_start_xy_radius": 0.08,
+   "hand_start_max_tilt_deg": 25.0,
+   "image_size": 128
+  },
+  "reward": {
+   "version": "v4r1",
+   "terminate_on_success": false,
+   "gamma": 0.99,
+   "w_reach": 2.0,
+   "reach_scale": 0.35,
+   "lateral_gain": 1.5,
+   "corridor_len": 0.1,
+   "w_align": 1.0,
+   "w_contact": 1.0,
+   "w_lift": 3.0,
+   "w_push": 1.0,
+   "push_scale": 0.05,
+   "hold_rate": 0.1,
+   "success_bonus": 10.0,
+   "drop": -3.0,
+   "table_collision": -0.02,
+   "effort": -0.0005,
+   "smoothness": -0.0005,
+   "physics_failure": -5.0
+  },
+  "version": "v4.0-foundation"
+ },
+ "sac_config": {
+  "learning_rate": 0.0003,
+  "buffer_size": 1000000,
+  "batch_size": 256,
+  "learning_starts": 10000,
+  "train_freq": 1,
+  "gradient_steps": 1,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "ent_coef": "auto_0.1",
+  "n_steps": 10,
+  "net_arch": [
+   256,
+   256
+  ],
+  "layernorm_critic": true,
+  "device": "cpu",
+  "torch_threads": 2,
+  "eval_every": 25000,
+  "checkpoint_every": 50000,
+  "q_health_every": 5000
+ },
+ "code_sha256_16": {
+  "__init__.py": "e3b0c44298fc1c14",
+  "agents.py": "f6b5b16f20207ea7",
+  "config.py": "cdcfbe8e7e2c39ef",
+  "controller.py": "535974e801a06693",
+  "env.py": "8b8932a2b42eed79",
+  "evaluation.py": "e365288987e9311e",
+  "grasp_planner.py": "e19b3f2054fdfd3e",
+  "objects.py": "2f8d95674e2ff870",
+  "perception.py": "ed622cce0fd6b742",
+  "rotations.py": "e4f4829bb7248565",
+  "scene.py": "17a4299521841988",
+  "scripted.py": "e486e52b8395e878",
+  "sim.py": "6453670011265178",
+  "video.py": "d236651a566674ba",
+  "scripts/__init__.py": "e3b0c44298fc1c14",
+  "scripts/benchmark_throughput.py": "764af830f0f50733",
+  "scripts/evaluate_policy.py": "c9f7aac7024d7e3b",
+  "scripts/integrity_manifest.py": "18ff7c0ada68c8f3",
+  "scripts/monitor_system.py": "4617f7777180f5f7",
+  "scripts/record_demos.py": "c655f0f82d7ca564",
+  "scripts/reward_audit.py": "a32373f344c09c29",
+  "scripts/run_scripted_baseline.py": "7637f6de410d079e",
+  "scripts/run_smoke_tests.py": "795d97199d02aeb6",
+  "scripts/train_sac.py": "4ee39c51d4071315",
+  "scripts/validate_checkpoints.py": "6d4f3748ac0542ff"
+ },
+ "versions": {
+  "python": "3.13.2",
+  "mujoco": "3.17.0",
+  "sb3": "2.9.2",
+  "torch": "2.7.1+cu118"
+ },
+ "seeds": {
+  "sb3_seed": 11,
+  "demo_seed_base": 3110000,
+  "validation_seed_base": 8000000,
+  "test_seed_base": 5100000
+ },
+ "pid": 4904,
+ "demo_prefill": {
+  "transitions": 20040,
+  "episodes": 65,
+  "scripted_gt_success": 0.7384615384615385,
+  "seconds": 51.81117486953735
+ },
+ "demo_verification_passed": true
+}
