@@ -1,0 +1,30 @@
+{
+ "episodes_per_policy": 54,
+ "seed_base": 9300000,
+ "smoke": true,
+ "approaches": [
+  "top",
+  "oblique"
+ ],
+ "policies": {
+  "scripted": "SCRIPTED",
+  "zero_residual": "ZERO",
+  "residual_best": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave2\\check_residual_s11\\best_model.zip",
+  "residual_last": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave2\\check_residual_s11\\last_model.zip",
+  "wave1_demo_best": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave1\\sac_demo_s11\\best_model.zip",
+  "wave1_scratch_best": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave1\\sac_scratch_s11\\best_model.zip"
+ },
+ "torch_threads": 1,
+ "deterministic": true,
+ "zero_vs_scripted_mismatches": {
+  "gt_success": 0,
+  "outcome": 0,
+  "max_lift_cm": 0,
+  "episode_return": 0,
+  "steps": 0
+ },
+ "scripted_env_vs_stored_baseline_gt_mismatches": 0,
+ "scripted_env_vs_stored_baseline_paired": 0,
+ "privileged": "simulator object pose in the observation / plan; GT-oracle contacts",
+ "seconds": 150.2512755393982
+}

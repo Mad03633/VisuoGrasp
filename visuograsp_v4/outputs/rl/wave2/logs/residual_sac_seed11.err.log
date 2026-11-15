@@ -1,0 +1,6 @@
+C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\keras\src\export\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 10.0250.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 24. The simulation is unstable. Time = 15.0850.
+

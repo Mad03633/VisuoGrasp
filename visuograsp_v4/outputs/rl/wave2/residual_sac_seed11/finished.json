@@ -1,0 +1,19 @@
+{
+ "steps": 75000,
+ "requested_steps": 150000,
+ "seconds_wall": 1513.184921503067,
+ "seconds_training_excl_waits": 1323.187203168869,
+ "seconds_waiting_gate_or_pause": 190.01220440864563,
+ "steps_per_s_training": 56.68132203316096,
+ "stop_reason": "gate_stop",
+ "error": null,
+ "best_validation_gt": 0.5,
+ "best_step": 50000,
+ "best_key": [
+  0.5,
+  0.5,
+  0.56,
+  10.0582
+ ],
+ "finished": "2026-11-14T13:41:54"
+}

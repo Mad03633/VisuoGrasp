@@ -1,0 +1,20 @@
+{
+ "seed_base": 8500000,
+ "per_cell": 1,
+ "approaches": [
+  "top",
+  "oblique"
+ ],
+ "episodes_per_model": 10,
+ "models": {
+  "checkpoints/gate_step_2000": "2000",
+  "best_model": "1000",
+  "zero_residual": "0"
+ },
+ "deterministic": true,
+ "torch_threads": 1,
+ "env": "residual",
+ "privileged": "object pose from simulator in the observation; GT-oracle contacts",
+ "seconds": 25.118210077285767,
+ "note": "independent validation; test seeds 5_100_000+ not used"
+}

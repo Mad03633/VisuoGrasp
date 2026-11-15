@@ -1,0 +1,5 @@
+file,kind,seed,approach,family,residual_outcome,residual_outcome_csv,scripted_outcome,scripted_outcome_csv,reproduced,frames,layout
+top_success_top_box_seed9300000.mp4,top_success,9300000,top,box,success_retained,success_retained,success_retained,success_retained,True,160,single
+oblique_success_oblique_box_seed9300100.mp4,oblique_success,9300100,oblique,box,success_retained,success_retained,success_retained,success_retained,True,160,single
+informative_failure_oblique_box_seed9301100.mp4,informative_failure,9301100,oblique,box,never_lifted,never_lifted,success_retained,success_retained,True,160,single
+side_by_side_scripted_wins_oblique_box_seed9301100.mp4,side_by_side_scripted_wins,9301100,oblique,box,never_lifted,never_lifted,success_retained,success_retained,True,160,"top row scripted, bottom row residual"
