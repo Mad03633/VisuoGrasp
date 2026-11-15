@@ -1,0 +1,12 @@
+{
+ "fig_final_results": "wave5/final_test/final/analysis/summary.csv",
+ "fig_paired": "wave5/final_test/final/analysis/paired_all.csv (group = all)",
+ "fig_failures": "wave5/final_test/final/episodes.csv (gt_success = False, by outcome)",
+ "fig_progression": {
+  "wave2/report/report.md \u00a74": "W1 SAC scratch 0.0 %, W1 SAC + demo replay 10.5 %, W2 residual SAC 49.4 %, scripted 77.8 % (5.1M, n = 324)",
+  "wave3/report/report.md": "W3 conservative residual SAC 69.1 %, scripted 76.7 % (6.1M, n = 540)",
+  "wave4/report/report.md \u00a74": "W4 curriculum SAC 18.9 %, BC + SAC (E2b) 48.7 %, BC 74.6 %, scripted 77.8 % (6.6M, n = 540)",
+  "wave5/final_test/final/analysis/summary.csv": "W5 BC ensemble 80.7 %, E6 82.0 %, scripted 80.6 % (6.7M, n = 540)"
+ },
+ "fig_architecture": "diagram of env.py / controller.py / scripted.py / grasp_planner.py"
+}

@@ -1,0 +1,131 @@
+{
+ "gif_e6_oblique_bottle.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_oblique_bottle_6715100\\e6_oblique_bottle_6715100_all.mp4",
+  "frames_from": 9,
+  "frames_to": 107,
+  "speed": 2,
+  "gif_frames": 50,
+  "seconds": 5.0,
+  "gif_frames_checked": 50,
+  "size_mb": 0.9,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_e6_top_cylinder.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_top_cylinder_6709000\\e6_top_cylinder_6709000_all.mp4",
+  "frames_from": 6,
+  "frames_to": 116,
+  "speed": 2,
+  "gif_frames": 56,
+  "seconds": 5.6,
+  "gif_frames_checked": 56,
+  "size_mb": 1.25,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_e6_oblique_lshape.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_oblique_lshape_6721100\\e6_oblique_lshape_6721100_all.mp4",
+  "frames_from": 14,
+  "frames_to": 139,
+  "speed": 2,
+  "gif_frames": 63,
+  "seconds": 6.3,
+  "gif_frames_checked": 63,
+  "size_mb": 1.31,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_e6_top_ring.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_top_ring_6719000\\e6_top_ring_6719000_all.mp4",
+  "frames_from": 3,
+  "frames_to": 117,
+  "speed": 2,
+  "gif_frames": 58,
+  "seconds": 5.8,
+  "gif_frames_checked": 58,
+  "size_mb": 1.09,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_scripted_vs_e6_oblique_box_6706109.gif": {
+  "source": [
+   "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\scripted_oblique_box_6706109\\scripted_oblique_box_6706109_all.mp4",
+   "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_oblique_box_6706109\\e6_oblique_box_6706109_all.mp4"
+  ],
+  "frames_from": 9,
+  "frames_to": 120,
+  "speed": 2,
+  "gif_frames": 56,
+  "seconds": 5.6,
+  "gif_frames_checked": 56,
+  "size_mb": 1.38,
+  "wh": [
+   800,
+   720
+  ]
+ },
+ "gif_scripted_side_box_tall.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\scripted_demo_side_box_tall_7000007\\scripted_demo_side_box_tall_7000007_all.mp4",
+  "frames_from": 23,
+  "frames_to": 106,
+  "speed": 2,
+  "gif_frames": 42,
+  "seconds": 4.2,
+  "gif_frames_checked": 42,
+  "size_mb": 0.6,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_e6_fail_ring_oblique.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_fail_ring_oblique_6719100\\e6_fail_ring_oblique_6719100_all.mp4",
+  "frames_from": 0,
+  "frames_to": 159,
+  "speed": 3,
+  "gif_frames": 54,
+  "seconds": 5.4,
+  "gif_frames_checked": 54,
+  "size_mb": 1.26,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_e6_fail_pushed_oblique_box.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\final_defense\\media\\rerendered\\e6_fail_pushed_oblique_box_6706102\\e6_fail_pushed_oblique_box_6706102_all.mp4",
+  "frames_from": 0,
+  "frames_to": 159,
+  "speed": 3,
+  "gif_frames": 54,
+  "seconds": 5.4,
+  "gif_frames_checked": 54,
+  "size_mb": 1.22,
+  "wh": [
+   900,
+   405
+  ]
+ },
+ "gif_v33_level_a_success.gif": {
+  "source": "C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_full_outputs\\cv_v2\\drl_runs_v3_final\\videos\\v33_final_demos\\A_train_success.mp4",
+  "frames_from": 0,
+  "frames_to": 91,
+  "speed": 2,
+  "gif_frames": 46,
+  "seconds": 4.6,
+  "gif_frames_checked": 46,
+  "size_mb": 1.17,
+  "wh": [
+   560,
+   420
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+# Integrity checks run 2026-11-15T04:16:45
+
+## V3.3 integrity manifest (651-file baseline)
+[integrity] untouched=True files=651 changed=0 missing=0 added_outside_v4=0 (6.8 s)
+
+## Frozen Wave 5 results (wave5/RESULTS_FROZEN_SHA256.txt)
+     78 OK
+
+## Frozen checkpoints and BC actors (frozen_policies/manifest.json)
+all checkpoint hashes match: True
+episodes.csv rows 3780 unique 3780
+
+## git status (no commits made)
+?? "VisuoGrasp_DRL_Grasping_Project_Instructions (1).pdf"
+?? visuograsp_v4/
+HEAD b84a5f4 add: Presentation

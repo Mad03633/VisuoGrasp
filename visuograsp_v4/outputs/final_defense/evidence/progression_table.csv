@@ -1,0 +1,10 @@
+method,wave,class,learned_pct,scripted_pct,test_set
+SAC from scratch,W1,auto,0.0,77.8,"5.1M, n=324"
+SAC + demo replay,W1,auto,10.5,77.8,"5.1M, n=324"
+Residual SAC,W2,residual,49.4,77.8,"5.1M, n=324"
+Conservative residual SAC,W3,residual,69.1,76.7,"6.1M, n=540"
+Curriculum SAC,W4,auto,18.9,77.8,"6.6M, n=540"
+BC + unrestricted SAC fine-tuning,W4,bcrl,48.7,77.8,"6.6M, n=540"
+Behaviour cloning (BC),W4,imit,74.6,77.8,"6.6M, n=540"
+BC ensemble,W5,imit,80.74074074074075,80.55555555555556,"6.7M, n=540"
+E6 BC-anchored RL,W5,bcrl,82.03703703703704,80.55555555555556,"6.7M, n=540"
