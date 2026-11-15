@@ -1,5 +1,0 @@
-time,step,event,detail
-2026-11-14T14:34:42,2000,gate_waiting,"{""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\check_conservative_2gates_s11\\checkpoints\\gate_step_2000.zip""}"
-2026-11-14T14:34:52,2000,gate_decision,"{""waited_s"": 10.0, ""decision"": ""continue"", ""reason"": ""smoke 2-gate test""}"
-2026-11-14T14:35:20,3000,gate_waiting,"{""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\check_conservative_2gates_s11\\checkpoints\\gate_step_3000.zip""}"
-2026-11-14T14:35:30,3000,gate_decision,"{""waited_s"": 10.0, ""decision"": ""continue"", ""reason"": ""smoke 2-gate test, run to the end""}"

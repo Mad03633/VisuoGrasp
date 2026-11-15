@@ -1,4 +1,0 @@
-file,kind,approach,seed,family,variant,resting_mode,outcome_csv,outcome_rerun,gt_success_rerun,max_lift_cm_rerun,reproduced,frames
-oblique_failure_no_contact_seed8500100.mp4,failure,oblique,8500100,box,tall,upright,no_contact,no_contact,False,1.454253384380877e-11,True,160
-top_failure_no_contact_seed8501000.mp4,failure,top,8501000,cylinder,squat,lying,no_contact,no_contact,False,1.4147710780676448e-11,True,160
-top_failure_never_lifted_seed8500000.mp4,failure,top,8500000,box,flat,end,never_lifted,never_lifted,False,0.7153181549671844,True,160

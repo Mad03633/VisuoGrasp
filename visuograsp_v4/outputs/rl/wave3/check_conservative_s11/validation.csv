@@ -1,3 +1,0 @@
-step,val_gt_success,val_gt_any_phalanx,val_partial_lift_rate,val_max_lift_cm,val_contact_rate,val_return,val_episodes,best,best_step,improved,eval_s,hours,val_gt_oblique,val_partial_oblique,val_gt_top,val_partial_top
-1000,0.6,0.6,0.6,10.51624524791979,1.0,8.016604004694196,10,0.6,1000,1,10.598509550094604,0.006228773461447822,0.4,0.4,0.8,0.8
-2000,0.5,0.5,0.5,9.089085509899027,1.0,-0.3954366512673529,10,0.6,1000,0,10.180310010910034,0.014085499842961629,0.2,0.2,0.8,0.8

@@ -1,4 +1,0 @@
-time,step,event,detail
-2026-11-14T11:41:11,2200,gate_waiting,"{""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave1_smoke\\check_scratch_s11\\checkpoints\\gate_step_2200.zip""}"
-2026-11-14T11:42:21,2200,gate_decision,"{""waited_s"": 70.0, ""decision"": ""stop"", ""reason"": ""smoke test of stop path""}"
-2026-11-14T11:42:21,2200,stop,"{""reason"": ""gate_stop"", ""decision"": {""decision"": ""stop"", ""reason"": ""smoke test of stop path""}}"

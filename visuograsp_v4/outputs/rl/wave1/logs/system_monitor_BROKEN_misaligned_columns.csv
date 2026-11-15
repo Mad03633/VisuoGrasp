@@ -1,3 +1,0 @@
-time,mem_available_gb,cpu_percent_psutil,sac_scratch_s11_gate_waiting,sac_scratch_s11_paused,sac_scratch_s11_finished,sac_demo_s11_gate_waiting,sac_demo_s11_paused,sac_demo_s11_finished,pause_active
-2026-11-14T11:46:51,5.9852294921875,19.1,False,False,False,False,False,False,False
-2026-11-14T11:47:51,5.514854431152344,29.9,10000,398.6218226493352,True,False,False,False,False,False,False,False

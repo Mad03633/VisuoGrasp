@@ -1,4 +1,0 @@
-time,step,event,detail
-2026-11-14T14:32:36,2000,gate_waiting,"{""checkpoint"": ""C:\\Users\\user\\Desktop\\AMRL\\Project_2_2\\visuograsp_v4\\outputs\\rl\\wave3\\check_conservative_s11\\checkpoints\\gate_step_2000.zip""}"
-2026-11-14T14:33:16,2000,gate_decision,"{""waited_s"": 40.0, ""decision"": ""stop"", ""reason"": ""smoke test""}"
-2026-11-14T14:33:16,2000,stop,"{""reason"": ""gate_stop"", ""decision"": {""decision"": ""stop"", ""reason"": ""smoke test""}}"

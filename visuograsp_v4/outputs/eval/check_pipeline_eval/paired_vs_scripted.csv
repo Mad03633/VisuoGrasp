@@ -1,2 +1,0 @@
-approach,paired_episodes,policy_gt,scripted_gt,both,only_policy,only_scripted,neither,mcnemar_exact_p
-top,27,0.0,0.9629629629629629,0,0,26,1,2.9802322387695312e-08

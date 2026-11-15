@@ -28,3 +28,7 @@ visuograsp_full_outputs/cv_v2/drl_runs_v3_final_BACKUP/
 # Keep only the selected best SAC checkpoints
 visuograsp_full_outputs/**/models/*.zip
 !visuograsp_full_outputs/cv_v2/drl_runs_v3_final/models/*_best.zip
+
+visuograsp_v4/outputs/
+__pycache__/
+*.pyc
