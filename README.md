@@ -11,17 +11,6 @@
 
 </div>
 
----
-
-> [!IMPORTANT]
-> * **Every learned V4 policy is a PRIVILEGED state-based controller.** Its observation contains the simulator object
->   pose and ground-truth fingertip-pad contacts. **No V4 result is vision-based.** The scripted expert also plans from
->   the simulator object pose.
-> * **V4 is a new environment**, not the original V3.3 one: a free 6-DoF wrist, a new object set, true object inertia,
->   and finger armature 1e-3 instead of 5e-5. V3.3 and V4 success rates come from different tasks and **must not be
->   compared directly**.
-> * The original V3.3 README is preserved byte-for-byte in [`README_V3.3.md`](README_V3.3.md).
-
 ## Contents
 
 1. [Headline result](#headline-result)
@@ -34,9 +23,8 @@
 8. [Demonstrations](#demonstrations)
 9. [Repository layout](#repository-layout)
 10. [Running locally (Windows, PowerShell, CPU)](#running-locally-windows-powershell-cpu)
-11. [Limitations](#limitations)
-12. [Documents](#documents)
-13. [Previous phase: V3.3](#previous-phase-v33)
+11. [Documents](#documents)
+12. [Previous phase: V3.3](#previous-phase-v33)
 
 ---
 
@@ -375,22 +363,6 @@ Set-Location ..\..\..\..
   start because the 6.7M test set has already been used.
 * Run evaluations with at most 2 workers because of memory; the interrupted final test was resumed with 1 worker.
 * Measured SAC throughput is about 50 environment steps/s in one process; long runs take hours.
-
-## Limitations
-
-* **PRIVILEGED state, no vision.** Every learned V4 policy observes the simulator object pose and GT pad contacts.
-  `perception.py` has colour segmentation (red objects only) and a geometric D0 contact estimate. There is no D2
-  detector for the moving wrist camera, and no V4 policy was trained with vision.
-* **One training seed per RL configuration.** The E6 RL gain was not replicated by E6b.
-* **Imitation of one privileged planner.** All strong learners copy the scripted expert and inherit its limits:
-  oblique ring 0 / 20, and 8.5–11.5 % "never lifted" for the expert and the learners alike.
-* **Side 90° grasps** were not learned; they exist only in the planner and the scripted baseline.
-* **Statistical resolution:** 540 episodes resolve differences of about 2–3 pp only for strongly paired policies.
-  Sub-group tests are exploratory. Absolute rates shift by about 3 pp between test sets.
-* **Simulation only:** procedural objects, no YCB objects, no real robot, and no finger abduction joints.
-* **Numerical stability:** squeezed grasps can still produce `object_runaway` events: 4 / 3,780 in the final test,
-  but up to 67 / 540 for curriculum SAC in Wave 4. They are recorded per episode and counted as failures.
-* **Reproducibility:** no locked environment, and the results are not in git.
 
 ## Documents
 
