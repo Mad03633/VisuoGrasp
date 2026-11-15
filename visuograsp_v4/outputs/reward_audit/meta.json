@@ -1,0 +1,5 @@
+{
+ "seed_base": 9100000,
+ "episodes_per_cell": 2,
+ "note": "privileged obs, gt_oracle contacts, DEV seeds"
+}
