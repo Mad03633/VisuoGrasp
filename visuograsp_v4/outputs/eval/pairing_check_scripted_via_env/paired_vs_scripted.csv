@@ -1,0 +1,3 @@
+approach,paired_episodes,policy_gt,scripted_gt,both,only_policy,only_scripted,neither,mcnemar_exact_p
+oblique,27,0.7407407407407407,0.7407407407407407,20,0,0,7,
+top,27,0.9629629629629629,0.9629629629629629,26,0,0,1,
